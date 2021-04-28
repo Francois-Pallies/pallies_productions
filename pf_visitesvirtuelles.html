@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>François Pallies Productions</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script type = "text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type = "text/javascript" src="assets/js/script.js"></script>
+</head>
+<body>
+   <div class="container-fluid headerNav fixed-top">
+    <!--HEADER-->
+       <div class="row">
+            <!--LOGO-->
+           <div class="col-2 logo text-center">
+                <img src="assets/img/logos/logo.png" alt="Pallies Productions">
+           </div>
+            <!--NAV-->
+            <div class="col-9 navColumn">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-center" href="index.html#accueil">Accueil</a>
+                            </li>
+                            <li class="nav-item dropdown text-center">
+                                <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  À Propos
+                                </a>
+                                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="apropos.html">Qui Suis-Je ?</a>
+                                    <a class="dropdown-item" href="apropos.html#materiel">Matériel</a>                          
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown text-center">
+                                <a class="nav-link dropdown-toggle text-center currentPage" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Portfolio
+                            </a>
+                            <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="pf_video.html">Video</a>
+                                <a class="dropdown-item" href="pf_photo.html">Photo</a>
+                                <a class="dropdown-item" href="pf_webdesign.html">WebDesign</a>
+                                <a class="dropdown-item" href="pf_illustrations.html">Infographie</a>
+                                <a class="dropdown-item" href="pf_visitesvirtuelles.html">Visites Virtuelles</a>
+                                <a class="dropdown-item" href="pf_lives.html">Lives</a>                           
+                            </div>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!--SOCIAL-->
+            <div class="col-1">
+                <div class="container social">
+                    <div class="row">
+                        <a href="https://bit.ly/PProdfbk" target="_blank" rel="noopener noreferrer">
+                            <div class="facebookLink"></div>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="https://bit.ly/PALPROD" target="_blank" rel="noopener noreferrer">
+                            <div class="youtubeLink"></div>
+                        </a> 
+                    </div>
+                    <div class="row"><a href="https://bit.ly/instapprod" target="_blank" rel="noopener noreferrer">
+                        <div class="instaLink"></div>
+                    </a></div> 
+                </div>
+           </div>           
+        </div>
+        <div class="row gradientBG"></div>
+    </div>
+    <!--CONTENU DE PAGE-->
+    <div class="container pageSection">
+        <!--TITRE PAGE-->
+        <div class="row">
+            <div class="col">
+                <h2>Visites Virtuelles</h2>
+            </div>  
+        </div>
+        <!--SECTION UNIQUE IMG LEFT-->
+        <div class="elementBox">
+            <!--TITRE-->
+            <div class="row">
+                <div class="col elementTitle">
+                    <h3>Maison 66m² sans extérieur</h3>
+                </div>
+            </div>
+            <!--CONTENU-->
+            <div class="row elementContent">
+                <!--Img-->
+                <div class="col-lg-6 elementFlex">
+                    <a class="btn" data-toggle="modal" data-target="#modalMaison66">
+                        <img src="assets/img/portfolio/visitesvirtuelles/maison66.jpg" alt="Maison 66m²">
+                    </a>
+                </div>
+                <!--Txt-->
+                <div class="col-lg-6 elementFlex text-center">
+                    <p>Exemple de visite réalisée dans une maison de 66 m² <strong>avec</strong> l'utilisation de la technologie HDR. <br> <br> ← Cliquez sur l'image pour lancer la visite</p>
+                </div>
+            </div>
+            <!--FENETRE MODALE-->
+            <div class="modal fade" id="modalMaison66" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div id="yvapw-EKU0WNxQlP" autoplay="true" style="width: 100%; height: 600px"></div>
+                            <script> (function(id,rd,v){var w=window,d=document,t='script',src='https://www.klapty.com/tour/tunnel/',v=v||'1.1.0',r='yvap'+v; w[r]=w[r]||{instance:null,l:[],s:null}; w[r].l.push(arguments); append=function(){ while(w[r].l.length) {w[r].instance.append(w[r].l.shift())}}; if(w[r].s===null){w[r].s=false; var a=d.createElement(t),m=d.getElementsByTagName(t)[0]; a.async=1; a.onload=function(f){ w[r].s=true;w[r].instance=new YVAppendPano(src);append()};a.src=src+'_app/append-v'+v+'.js?_'+(new Date().getTime()); m.parentNode.insertBefore(a,m); var l=d.createElement('link'); l.rel='stylesheet'; l.type='text/css'; l.href=src+'_app/append-v'+v+'.css?_'+(new Date().getTime()); d.getElementsByTagName('HEAD')[0].appendChild(l); } else if(w[r].s===true){append()};})('EKU0WNxQlP'); </script>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SECTION UNIQUE IMG RIGHT-->
+        <div class="elementBox">
+            <!--TITRE-->
+            <div class="row">
+                <div class="col elementTitle">
+                    <h3>Maison 122m² avec jardin</h3>
+                </div>
+            </div>
+            <!--CONTENU-->
+            <div class="row elementContent">
+                <!--Txt-->
+                <div class="col-lg-6 elementFlex text-center">
+                    <p>Exemple de visite réalisée dans une maison de 122 m² avec jardin <strong>sans</strong> l'utilisation de la technologie HDR. <br> <br> Cliquez sur l'image pour lancer la visite →</p>
+                </div>
+                <!--Img-->
+                <div class="col-lg-6 elementFlex">
+                    <a class="btn" data-toggle="modal" data-target="#modalMaison122">
+                        <img src="assets/img/portfolio/visitesvirtuelles/maison122.jpg" alt="Maison 66m²">
+                    </a>
+                </div>
+            </div>
+            <!--FENETRE MODALE-->
+            <div class="modal fade" id="modalMaison122" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div id="yvapw-zBf02IFKNz" autoplay="true" style="width: 100%; height: 600px"></div>
+                            <script> (function(id,rd,v){var w=window,d=document,t='script',src='https://www.klapty.com/tour/tunnel/',v=v||'1.1.0',r='yvap'+v; w[r]=w[r]||{instance:null,l:[],s:null}; w[r].l.push(arguments); append=function(){ while(w[r].l.length) {w[r].instance.append(w[r].l.shift())}}; if(w[r].s===null){w[r].s=false; var a=d.createElement(t),m=d.getElementsByTagName(t)[0]; a.async=1; a.onload=function(f){ w[r].s=true;w[r].instance=new YVAppendPano(src);append()};a.src=src+'_app/append-v'+v+'.js?_'+(new Date().getTime()); m.parentNode.insertBefore(a,m); var l=d.createElement('link'); l.rel='stylesheet'; l.type='text/css'; l.href=src+'_app/append-v'+v+'.css?_'+(new Date().getTime()); d.getElementsByTagName('HEAD')[0].appendChild(l); } else if(w[r].s===true){append()};})('zBf02IFKNz'); </script>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!--SECTION UNIQUE IMG LEFT-->
+                <div class="elementBox">
+                    <!--TITRE-->
+                    <div class="row">
+                        <div class="col elementTitle">
+                            <h3>Maison 200m² avec Jardin</h3>
+                        </div>
+                    </div>
+                    <!--CONTENU-->
+                    <div class="row elementContent">
+                        <!--Img-->
+                        <div class="col-lg-6 elementFlex">
+                            <a class="btn" data-toggle="modal" data-target="#modalMaison200">
+                                <img src="assets/img/portfolio/visitesvirtuelles/maison200.jpg" alt="Maison 200m²">
+                            </a>
+                        </div>
+                        <!--Txt-->
+                        <div class="col-lg-6 elementFlex text-center">
+                            <p>Exemple de visite réalisée dans une maison de 200 m² et de son jardin de 700 m² et son garage, <strong>avec</strong> l'utilisation de la technologie HDR. <br> <br> ← Cliquez sur l'image pour lancer la visite</p>
+                        </div>
+                    </div>
+                    <!--FENETRE MODALE-->
+                    <div class="modal fade" id="modalMaison200" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div id="yvapw-EVV0v9USAH" autoplay="true" style="width: 100%; height: 600px"></div> <script> (function(id,rd,v){var w=window,d=document,t='script',src='https://www.klapty.com/tour/tunnel/',v=v||'1.1.0',r='yvap'+v; w[r]=w[r]||{instance:null,l:[],s:null}; w[r].l.push(arguments); append=function(){ while(w[r].l.length) {w[r].instance.append(w[r].l.shift())}}; if(w[r].s===null){w[r].s=false; var a=d.createElement(t),m=d.getElementsByTagName(t)[0]; a.async=1; a.onload=function(f){ w[r].s=true;w[r].instance=new YVAppendPano(src);append()};a.src=src+'_app/append-v'+v+'.js?_'+(new Date().getTime()); m.parentNode.insertBefore(a,m); var l=d.createElement('link'); l.rel='stylesheet'; l.type='text/css'; l.href=src+'_app/append-v'+v+'.css?_'+(new Date().getTime()); d.getElementsByTagName('HEAD')[0].appendChild(l); } else if(w[r].s===true){append()};})('EVV0v9USAH'); </script> 
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/img/logos/logo.png" alt="">
+                </div>
+                <div class="col-12">
+                    <p>Pallies Productions 2021</p>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
