@@ -120,6 +120,7 @@ nav a {
     margin: 0;
     border: none;
     padding-top: 5px;
+    box-shadow: none;
 }
 .navbar {
     padding: 0;
