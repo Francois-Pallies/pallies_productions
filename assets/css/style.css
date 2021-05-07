@@ -232,7 +232,7 @@ nav a:hover {
     font-weight: bold;
 }
 .elementBox img {
-    max-width: 300px;
+    max-width: 400px;
     margin-top: 5px;
     margin-bottom: 5px;
     box-shadow: 10px 8px 10px rgb(15, 15, 15);
@@ -242,6 +242,13 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.webDesignTitle {
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 .elementContent {
     width: 100%;

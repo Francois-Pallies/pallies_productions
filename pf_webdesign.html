@@ -20,32 +20,31 @@
     <script type = "text/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
-            <!-- Messenger Plug-in Discussion Code -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v10.0'
-    });
-  };
+    <!-- Messenger Plug-in Discussion Code -->
+    <div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+        xfbml            : true,
+        version          : 'v10.0'
+        });
+    };
 
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-
-<!-- Your Plug-in Discussion code -->
-<div class="fb-customerchat"
-  attribution="biz_inbox"
-  page_id="361475184259449">
-</div>
-   <div class="container-fluid headerNav fixed-top">
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Your Plug-in Discussion code -->
+    <div class="fb-customerchat"
+    attribution="biz_inbox"
+    page_id="361475184259449">
+    </div>
     <!--HEADER-->
+    <div class="container-fluid headerNav fixed-top">
        <div class="row">
             <!--LOGO-->
            <div class="col-2 logo text-center">
@@ -120,11 +119,117 @@
                 <h2>WebDesign</h2>
             </div>  
         </div>
-        <!--SECTION UNIQUE IMG LEFT-->
-        <div class="elementBox">
+        <!--SECTION UNIQUE No IMG Texte Au Centre-->
+      <!--   <div class="elementBox">
             <h3 class="elementTitle">En Construction</h3>
             <p class="mt-4 elementFlex">En attendant, pour vous faire une idée, vous pouvez toujours regarder attentivement ce site qui à été entièrement codé par mes soins</p>
             <p class="text-center"><a href="index.html#accueil">Retour à l'accueil</a></p>
+        </div> --> 
+        <!--SECTION UNIQUE IMG LEFT-->
+        <div class="elementBox">
+            <!--TITRE-->
+            <div class="row">
+                <div class="col elementTitle">
+                    <h3>Réalisations pendant ma formation à la Manu.</h3>
+                </div>
+            </div>
+            <hr>
+            <!--CONTENU-->
+            <div class="row elementContent">
+                <!--TITRE-->           
+                <div class="col-12 webDesignTitle">
+                    <h4>Mon CV Numérique</h4>
+                </div>            
+                <!--Txt-->
+                <div class="col-lg-6 elementFlex">
+                    <p>Projet en construction, qui évoluera tout au long de ma formation à la Manu. A ce jour cette page ne dispose que de l'animation d'accueil, mais à terme elle vous permettra d'explorer mon parcours de façon ludique, au cœur d'un monde rempli de pixels.</p>
+                    <p>Cliquez sur l'image ouvrir le site.</p>
+                </div>
+                <!--Img-->
+                <div class="col-lg-6 elementFlex">
+                    <a target="_blank" href="https://francois-pallies.github.io/francois_s_world/index.html"><img src="assets/img/webdesign/FrancoisPallies_BienvenueDansMonMonde.jpg" alt="Le Prix Juste"></a>
+                </div>
+            </div>
+            <hr>
+            <!--CONTENU-->
+            <div class="row elementContent">
+                <!--TITRE-->           
+                <div class="col-12 webDesignTitle">
+                    <h4>Moyenne Simulator 21</h4>
+                </div>                
+                <!--Img-->
+                <div class="col-lg-6 elementFlex">
+                    <a target="_blank" href="https://francois-pallies.github.io/moyenne_simulator_21/index.html"><img src="assets/img/webdesign/moyenne_simulator_21.jpg" alt="Moyenne Simulator 21"></a>
+                </div>
+                <!--Txt-->
+                <div class="col-lg-6 elementFlex">
+                    <p>Petit calculareur de moyenne réalisé à l'occasion d'un TP jQuery. Le principe est simple, rentrez votre prénom, vos notes, et mon calculateur magique vous donne votre moyenne ainsi que l'appréciation du directeur.
+                    </p>
+                    <p>Cliquez sur l'image pour jouer.</p>
+                </div>
+            </div>
+            <hr>
+            <!--CONTENU-->
+            <div class="row elementContent">
+                <!--TITRE-->           
+                <div class="col-12 webDesignTitle">
+                    <h4>Le Prix Juste</h4>
+                </div>            
+                <!--Txt-->
+                <div class="col-lg-6 elementFlex">
+                    <p>Second TP réalisé durant le module jQuery. Là encore, rien qui ne révolutionne l'industrie mondiale, ici l'ordinateur choisi un nombre entre 0 et 100. Votre mission, si vous l'acceptez, consiste à retrouver ce nombre en moins de 10 tentatives. Combien de fois d'affilé pourez vous le battre?</p>
+                    <p>Cliquez sur l'image pour jouer.</p>
+                </div>
+                <!--Img-->
+                <div class="col-lg-6 elementFlex">
+                    <a target="_blank" href="https://francois-pallies.github.io/LePrixJuste/index.html"><img src="assets/img/webdesign/prix_juste.jpg" alt="Le Prix Juste"></a>
+                </div>
+            </div>
+            <hr>
+            <!--CONTENU-->
+            <div class="row elementContent">
+                <!--TITRE-->           
+                <div class="col-12 webDesignTitle">
+                    <h4>Révision des Tables de Multiplication</h4>
+                </div>                
+                <!--Img-->
+                <div class="col-lg-6 elementFlex">
+                    <a target="_blank" href="https://francois-pallies.github.io/multiplication/index.html"><img src="assets/img/webdesign/multiplication.jpg" alt="Revision Multiplication"></a>
+                </div>
+                <!--Txt-->
+                <div class="col-lg-6 elementFlex">
+                    <p>Projet perso réalisé durant le module JavaScript. Cette page deviendra la meilleur amie de vos enfants du CE1 au CM2... Ou pas !
+                    </p>
+                    <p>Cliquez sur l'image pour réviser.</p>
+                </div>
+            </div>
+        </div>
+        <!--SECTION UNIQUE IMG LEFT-->
+        <div class="elementBox">
+            <!--TITRE-->
+            <div class="row">
+                <div class="col elementTitle">
+                    <h3>Autres réalisations</h3>
+                </div>
+            </div>
+            <hr>
+            <!--CONTENU-->
+            <div class="row elementContent">
+                <!--TITRE-->           
+                <div class="col-12 webDesignTitle">
+                    <h4>Mon précédent site Pallies Productions</h4>
+                </div>                
+                <!--Img-->
+                <div class="col-lg-6 elementFlex">
+                    <a target="_blank" href="https://palliesproductions.com/"><img src="assets/img/webdesign/palliesproductions.jpg"></a>
+                </div>
+                <!--Txt-->
+                <div class="col-lg-6 elementFlex">
+                    <p>Première version de mon site, réalisée en 2019 sur Adobe Portfolio, bien avant que la mouche du Front End ne me pique.
+                    </p>
+                    <p>Cliquez sur l'image ouvrir le site.</p>
+                </div>
+            </div>
         </div>
     </div>
     <footer class="footer mt-auto py-3">
