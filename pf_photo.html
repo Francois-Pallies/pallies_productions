@@ -4,140 +4,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>François Pallies Productions</title>
-
+    <!--Infos Site-->
+    <title>Pallies Productions</title>
+    <link rel="icon" href="assets/img/logos/favicon.png">
+    <!--Balises Open Graph-->    
+    <meta property="og:url" content="https://francois-pallies.github.io/pallies-productions-V2/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pallies Productions">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://francois-pallies.github.io/pallies-productions-V2/assets/img/og/palprodog1920x1080.png">
+    <meta property="og:description" content="Vidéo, Webdesign, Live-Streaming Visite Virtuelle, Infographie.">
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-   
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
+    <!--Style-->
+    <link href="assets/css/framework.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <script type = "text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type = "text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type = "text/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
-            <!-- Messenger Plug-in Discussion Code -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v10.0'
-    });
-  };
+    <!-- Messenger Plug-in Discussion Code -->
+    <div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+        xfbml            : true,
+        version          : 'v10.0'
+        });
+    };
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Your Plug-in Discussion code -->
+    <div class="fb-customerchat"
+    attribution="biz_inbox"
+    page_id="361475184259449">
+    </div>
 
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
+    <!-- Header -->
+    <!-- <header>
+        <video src="assets/video/intro_site.mp4" playsinline autoplay muted loop width="100%"></video>
+    </header> -->
 
-<!-- Your Plug-in Discussion code -->
-<div class="fb-customerchat"
-  attribution="biz_inbox"
-  page_id="361475184259449">
-</div>
-   <div class="container-fluid headerNav fixed-top">
-    <!--HEADER-->
-       <div class="row">
-            <!--LOGO-->
-           <div class="col-2 logo text-center">
-                <img src="assets/img/logos/logo.png" alt="Pallies Productions">
-           </div>
-            <!--NAV-->
-            <div class="col-9 navColumn">
-                <nav class="navbar navbar-expand-lg">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-center" href="index.html#accueil">Accueil</a>
+    <!--Nav Bar-->
+    <div class="navBar">
+        <div id="navBarLogo" class="flexCenterAll">
+            <img src="assets/img/logos/logo.png" alt="Logo Pallies Productions">
+        </div>
+        <h1 class="flexCenterAll">Pallies Productions</h1>
+        <div id="burgerMenu" class="menuClosed flexCenterAll">
+                <button id="burgerButton"></button>
+        </div>
+        <nav>
+            <ul id="desktopNav">
+                <li class="menu"><a id="accueil" class="menuItem" href="index.html#page">Accueil</a></li>
+                <li class="dropdown">
+                    <div class="dropdownToggle menu">
+                        <button class="menuItem">À Propos ▼</button>
+                        <ul class="dropdownMenu flexCenterAll">
+                            <li class="flexCenterAll">
+                                <a class="flexCenterAll" href="apropos.html">Qui Suis-Je ?</a>
                             </li>
-                            <li class="nav-item dropdown text-center">
-                                <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  À Propos
-                                </a>
-                                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="apropos.html">Qui Suis-Je ?</a>
-                                    <a class="dropdown-item" href="apropos.html#materiel">Matériel</a>                          
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown text-center">
-                                <a class="nav-link dropdown-toggle text-center currentPage" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Portfolio
-                            </a>
-                            <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="pf_video.html">Video</a>
-                                <a class="dropdown-item" href="pf_photo.html">Photo</a>
-                                <a class="dropdown-item" href="pf_webdesign.html">WebDesign</a>
-                                <a class="dropdown-item" href="pf_illustrations.html">Illustrations</a>
-                                <a class="dropdown-item" href="pf_visitesvirtuelles.html">Visites Virtuelles</a>
-                                <a class="dropdown-item" href="pf_lives.html">Lives</a>                              
-                            </div>
-                            </li>
-                            <!-- <li class="nav-item text-center">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li> -->
+                            <li class="flexCenterAll">
+                                <a class="flexCenterAll" href="apropos.html#materiel">Matériel</a>
+                            </li>                         
                         </ul>
                     </div>
-                </nav>
-            </div>
-            <!--SOCIAL-->
-            <div class="col-1">
-                <div class="container social">
-                    <div class="row">
-                        <a href="https://bit.ly/PProdfbk" target="_blank" rel="noopener noreferrer">
-                            <div class="facebookLink"></div>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a href="https://bit.ly/PALPROD" target="_blank" rel="noopener noreferrer">
-                            <div class="youtubeLink"></div>
-                        </a> 
-                    </div>
-                    <div class="row"><a href="https://bit.ly/instapprod" target="_blank" rel="noopener noreferrer">
-                        <div class="instaLink"></div>
-                    </a></div> 
-                </div>
-           </div>           
-        </div>
-        <div class="row gradientBG"></div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdownToggle menu">
+                        <button id="currentPage" class="menuItem currentPage">Portfolio ▼</button>
+                        <ul class="dropdownMenu">
+                            <li class="flexCenterAll">
+                                <a class="flexCenterAll" href="pf_video.html">Video</a>
+                            </li>
+                            <li class="flexCenterAll">
+                                <a class="flexCenterAll" href="pf_photo.html">Photo</a>
+                            </li>
+                            <li class="flexCenterAll">
+                                <a class="flexCenterAll" href="pf_webdesign.html">WebDesign</a>
+                            </li>
+                            <li class="flexCenterAll">
+                                <a class="flexCenterAll" href="pf_illustrations.html">Infographie</a>
+                            </li>
+                            <li class="flexCenterAll">
+                                <a class="flexCenterAll" href="pf_visitesvirtuelles.html">Visites Virtuelles</a>
+                            </li>
+                            <li class="flexCenterAll">
+                                <a class="flexCenterAll" href="pf_lives.html">Lives</a>  
+                            </li>
+                        </ul>
+                    </div>                 
+                </li>
+            </ul>
+        </nav>
     </div>
-    <!--CONTENU DE PAGE-->
-    <div class="container pageSection galeriePhoto">
-        <!--TITRE PAGE-->
-        <div class="row">
-            <div class="col">
-                <h2>Photo</h2>
-            </div>  
+    <ul id="burgerNav" class="flexCenterX">
+        <hr>
+        <li class="flexCenterAll">
+            <a class="flexCenterAll" href="index.html">Accueil</a>
+        </li>
+        <hr>
+        <li class="flexCenterAll row arrowDown black" id="aPropos">
+            <button>À Propos <span class="arrow">▼</span></button>
+        </li>
+        <div class="aProposDropdown flexCenterAll">
+            <li class="flexCenterAll">
+                <a class="flexCenterAll" href="apropos.html">Qui Suis-Je ?</a>
+            </li>
+            <li class="flexCenterAll">
+                <a class="flexCenterAll" href="apropos.html#materiel">Matériel</a>
+            </li>
+        
+        </div> 
+        <hr>               
+        <li class="flexCenterAll row arrowDown black" id="portfolio">
+            <button>Portfolio <span class="arrow">▼</span></button>
+        </li>
+        <div class="portfolioDropdown">
+            <li class="flexCenterAll">
+                <a class="flexCenterAll" href="pf_video.html">Video</a>
+            </li>
+            <li class="flexCenterAll">
+                <a class="flexCenterAll" href="pf_photo.html">Photo</a>
+            </li>
+            <li class="flexCenterAll">
+                <a class="flexCenterAll" href="pf_webdesign.html">WebDesign</a>
+            </li>
+            <li class="flexCenterAll">
+                <a class="flexCenterAll" href="pf_illustrations.html">Infographie</a>
+            </li>
+            <li class="flexCenterAll">
+                <a class="flexCenterAll" href="pf_visitesvirtuelles.html">Visites Virtuelles</a>
+            </li>
+            <li class="flexCenterAll">
+                <a class="flexCenterAll" href="pf_lives.html">Lives</a>  
+            </li>                       
         </div>
-        <!--SECTION UNIQUE IMG LEFT-->
-        <div class="elementBox instaFeed">
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-a3efb966-d988-40db-90bf-f07c20117bec"></div>
+    </ul>
+    <!--Conteneur Principal-->
+    <div class="containerPrincipal flexCenterX col">
+
+        <!--Titre de page-->
+        <div class="pageTitre flexCenterAll">
+            <h2>Photo</h2>
         </div>
-    </div>
-    <footer class="footer mt-auto py-3">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-12">
-                    <img src="assets/img/logos/logo.png" alt="">
-                </div>
-                <div class="col-12">
-                    <p>Pallies Productions 2021</p>
-                </div>
-            </div>
+
+        <!--Bloc de contenu / A Propos-->
+        <div class="container flexCenterAll col mh45vh">
+
             
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-a3efb966-d988-40db-90bf-f07c20117bec"></div>
+            
+            
+            <!--/Fin de Single News-->          
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="grid3col">
+        <div id="socialLinks" class="flexCenterAll spaceAroundX">
+            <a href="https://bit.ly/PProdfbk" target="_blank" rel="noopener noreferrer">
+                <div class="facebookLink"></div>
+            </a>
+            <a href="https://bit.ly/PALPROD" target="_blank" rel="noopener noreferrer">
+                <div class="youtubeLink"></div>
+            </a> 
+            <a href="https://bit.ly/instapprod" target="_blank" rel="noopener noreferrer">
+                <div class="instaLink"></div>
+            </a>
+        </div>
+        <div id="palliesProductions" class="textCenter flexCenterAll col">
+            <img src="assets/img/logos/logo.png" alt="">
+            <p>Pallies Productions 2021</p>
         </div>
     </footer>
+    <!--Script-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
