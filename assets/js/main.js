@@ -1,8 +1,8 @@
-$('.menu').not('.currentPage').mouseenter(function() {
+$('.menu').not('#currentMenu').mouseenter(function() {
     $(this).children('.menuItem').addClass('currentPage')
     $('#currentPage').removeClass('currentPage')
 })
-$('.menu').not('.currentPage').mouseleave(function() {
+$('.menu').not('#currentMenu').mouseleave(function() {
     $(this).children('.menuItem').removeClass('currentPage') 
     $('#currentPage').addClass('currentPage')
 })
