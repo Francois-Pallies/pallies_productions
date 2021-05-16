@@ -430,7 +430,7 @@ footer img {
         border: solid 1px rgb(34, 34, 34);
         border-bottom: none;
     }
-    nav > ul > li > a:hover, nav > ul > li button:hover {
+    nav > ul > li > a:hover {
         background-color: #d5d5d5;
         color: rgb(34, 34, 34);
         font-size: 1.3em;
